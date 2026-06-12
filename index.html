@@ -3,40 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>litura.cn</title>
+  <title>娱途钓鱼相册工具站</title>
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      margin: 0;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #f5f5f7;
+      font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif;
+      background: #f0f4f8;
       color: #1d1d1f;
+    }
+    header {
+      background: #fff;
+      padding: 24px 40px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    header h1 {
+      font-size: 22px;
+      font-weight: 600;
+      color: #1a73e8;
+    }
+    header p {
+      font-size: 14px;
+      color: #666;
+      margin-top: 4px;
     }
     main {
       flex: 1;
+      max-width: 800px;
+      width: 100%;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    .card h2 {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #1d1d1f;
+    }
+    .card p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #444;
+    }
+    .tags {
       display: flex;
-      align-items: center;
-      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+    .tag {
+      background: #e8f0fe;
+      color: #1a73e8;
+      font-size: 13px;
+      padding: 4px 12px;
+      border-radius: 20px;
     }
     footer {
       text-align: center;
-      padding: 16px;
+      padding: 20px;
       font-size: 13px;
-      color: #86868b;
+      color: #999;
+      border-top: 1px solid #e5e5e5;
+      background: #fff;
     }
     footer a {
-      color: #86868b;
+      color: #999;
       text-decoration: none;
     }
-    footer a:hover {
-      text-decoration: underline;
-    }
+    footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
-  <main></main>
+  <header>
+    <h1>娱途钓鱼相册工具站</h1>
+    <p>分享好用的钓鱼工具与知识</p>
+  </header>
+  <main>
+    <div class="card">
+      <h2>关于本站</h2>
+      <p>本站专注于钓鱼领域，分享实用的钓鱼工具、技巧与知识，包括钓鱼相册整理、渔获记录、钓点信息等内容，帮助钓鱼爱好者更好地记录和分享钓鱼乐趣。</p>
+    </div>
+    <div class="card">
+      <h2>内容方向</h2>
+      <p>涵盖淡水钓、海钓等多种钓鱼方式，提供工具推荐、钓法分享、渔具评测等实用内容。</p>
+      <div class="tags">
+        <span class="tag">钓鱼工具</span>
+        <span class="tag">渔获记录</span>
+        <span class="tag">技巧分享</span>
+        <span class="tag">钓鱼相册</span>
+        <span class="tag">渔具评测</span>
+      </div>
+    </div>
+  </main>
   <footer>
     <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">粤ICP备2026008477号</a>
   </footer>
